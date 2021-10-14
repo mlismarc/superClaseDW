@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+:root{
+    /* Definición de variables*/
+    --colorFondo: rgba(21, 21, 184, 0.418);
+    --globalFontSize: 10px;    
+    --colorFuente: rgba(70, 9, 9, 0.924);
+    --boderSize: 0.5rem;
+}
+
+body{
+    font-size: var(--globalFontSize, 10px);
+    background-color:  var(--colorFondo, rgba(0, 0, 139, 0.719));
+    padding: 5px;
+}
+
+
+h1{
+    --borderSizeH1: 1.5rem;
+    display: inline-block;
+    font-size: calc( var(--globalFontSize) * 2);    
+    width: max(3rem, 40%);
+
+    border-bottom: var(--borderSizeH1) solid red;
+    border-top: var(--borderSizeH1) solid darkblue;
+}
+
+
